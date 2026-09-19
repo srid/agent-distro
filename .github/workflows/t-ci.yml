@@ -1,0 +1,9 @@
+name: T CI
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  probe-check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "T CI ran"
